@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume </title>
+	<style>
+	@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", SansSerif;
+}
+
+body {
+  background-image: url('wow.jpg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1000px;
+  background-color: #040405;
+  margin: 50px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+.container .left_Side {
+  position: relative;
+  background-color: #040405;
+  padding: 40px;
+}
+.profileText {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.profileText .imgBx {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.profileText .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.photo {
+  width: 100%;
+  height: auto;
+}
+.profileText h2 {
+  color: #fff;
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+.profileText h2 span {
+  font-size: 0.8em;
+  font-weight: 300;
+}
+.contactInfo {
+  padding-top: 40px;
+}
+.title {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+.contactInfo ul {
+  position: relative;
+}
+.contactInfo ul li {
+  list-style: none;
+  position: relative;
+  margin: 10px 0;
+  cursor: pointer;
+}
+.contactInfo ul li .icon {
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: #03a9f4;
+}
+.contactInfo ul li span {
+  color: #fff;
+  font-weight: 300;
+}
+.contactInfo.education li {
+  margin-bottom: 15px;
+}
+.contactInfo.education h5 {
+  color: #03a9f4;
+  font-weight: 500;
+}
+.contactInfo.education h4:nth-child(2) {
+  color: #fff;
+  font-weight: 500;
+}
+.contactInfo.education h4 {
+  color: #fff;
+  font-weight: 300;
+}
+.contactInfo.language .percent div {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #03a9f4;
+}
+.container .right_Side {
+  position: relative;
+  background-color: #fff;
+  padding: 40px;
+}
+.about {
+  margin-bottom: 50px;
+}
+.about:last-child {
+  margin-bottom: 0;
+}
+.title2 {
+  color: #003147;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+p {
+  color: #081921;
+}
+.about .box {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+.about .box .year_company {
+  min-width: 150px;
+}
+.about .box .year_company h5 {
+  text-transform: uppercase;
+  color: #848c90;
+  font-weight: 600;
+}
+.about .box .text h4 {
+  text-transform: uppercase;
+  color: #2a7da2;
+  font-size: 16px;
+}
+.interest ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.interest ul li {
+  list-style: none;
+  color: black;
+  font-weight: 500;
+  margin: 10px 0;
+}
+.interest ul li .fa {
+  color: #03a9f4;
+  font-size: 18px;
+  width: 20px;
+}
+  }
+  .interest ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+media (max-width: 600px) {
+  .about .box {
+    flex-direction: column;
+  }
+  .about .box .year_company {
+    margin-bottom: 5px;
+  }
+  .interest ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+ 
+}
+.englishw50 {
+  width: 60%;
+}
+.russianw90 {
+  width: 90%;
+}
+.frenchw30 {
+  width: 30%;
+}
+.htmlws30 {
+  width: 50%;
+}
+.cssws45 {
+  width: 45%;
+}
+.jsws70 {
+  width: 70%;
+}
+.phws40 {
+  width: 40%;
+}
+.ilws60 {
+  width: 60%;
+}
+.adw70 {
+  width: 70%;
+}
+fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="left_Side">
+        <div class="profileText">
+            <div class="imgBx">
+                <img src="kenny-modified.png">
+            </div>
+            <br>
+            <h2>Ken Jurel Boral <br><span>BSIT Student</span> </h2>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <a href="https://www.facebook.com/KBoral.143/" target="_blank" class="fa fa-facebook"></a>
+            <a href="https://www.youtube.com/channel/UC76Nbxymuj6lCOBkBDIpqaw" target="_blank" class="fa fa-youtube"></a>
+        </div>
+		<center>
+			<a href="about.html" target="_blank"><button>About Me</button><a href="contact.html" target="_blank"><button>Contact Me</button>
+			</center>
+        <div class="contactInfo">
+            <h3 class="title">Contact Info</h3>
+            <ul>
+                <li>
+                    <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                    <span class="text">09369224036</span>
+                </li>
+                <li>
+                    <span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                    <span class="text">kenboral22@gmail.com</span>
+                </li>
+
+                <li>
+                    <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                    <span class="text">Gubat, Sorsogon</span>
+                </li>
+            </ul>
+        </div>
+        <div class="contactInfo education">
+            <h3 class="title">Education</h3>
+            <ul>
+                <li>
+                    <h5>2006-2012</h5>
+                    <h4>Grade 1 to Grade 6</h4>
+                    <h4>Aguinaldo Elementary School</h4>
+                </li>
+                <li>
+                    <h5>2012-2018</h5>
+                    <h4>Junior and Senior High</h4>
+                    <h4>Gubat National High School</h4>
+                </li>
+                <li>
+                    <h5>2018-2019</h5>
+                    <h4>Auto NCI and Driving NCII </h4>
+                    <h4>Tesda BNVTS</h4>
+                </li>
+				 <li>
+                    <h5>2022-Present</h5>
+                    <h4>BSIT </h4>
+                    <h4>The Lewis College</h4>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="right_Side">
+        <div class="about">
+            <h2 class="title2">Profile</h2>
+           <p>
+                Hey! I'm <strong>Ken Jurel Boral</strong>. Coding has changed my world. It's not just about apps. Learning to code gave me <i>problem-solving skills</i> and a way to communicate with others on a technical level. I can also develop websites and use my coding skills to get a better job. And I learned it all at <strong>The Lewis College</strong> where they build your self-esteem and keep you motivated. Join me in this rewarding journey. You'll have fun, get help, and learn along the way!
+            </p>
+            <p class="quote">"Declare variables, not war"</p>
+        </div>
+        <div class="about">
+            <h2 class="title2">Experience</h2>
+            <div class="box">
+                <div class="year_company">
+                    <h5>2018 - 2019</h5>
+                    <h5>TOYOTA santa rosa laguna</h5>
+                </div>
+                <div class="text">
+                    <h4>MHO</h4>
+
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="year_company">
+                    <h5>2020 - 2021</h5>
+                    <h5>FABE com shop</h5>
+                </div>
+                <div class="text">
+                    <h4>Watchman</h4>
+
+
+
+            </div>
+        </div>
+        <div class="about interest">
+		<center>
+            <h2 class="title2">Interests</h2>
+            <ul>
+                <li><i class="fa fa-book" aria-hidden="true"></i> Reading</li>
+                <li><i class="fa fa-gamepad" aria-hidden="true"></i> Gaming</li>
+                <li><i class="fa fa-cutlery" aria-hidden="true"></i> Cooking</li>
+                <li><i class="fa fa-microphone" aria-hidden="true"></i> Singing</li>
+            </ul>
+        </div>
+
+
+    </div>
+</body>
+</html>
